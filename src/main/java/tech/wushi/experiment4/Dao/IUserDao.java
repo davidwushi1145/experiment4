@@ -8,7 +8,7 @@ import tech.wushi.experiment4.Entity.User;
 import javax.transaction.Transactional;
 
 public interface IUserDao extends JpaRepository<User,Long> {
-    User findUserByIdAndPassword(Long id,String password);
+//    User findUserByIdAndPassword(Long id,String password);
     User findUserById(Long id);
     User findUserByNameAndPassword(String name,String password);
     @Transactional
